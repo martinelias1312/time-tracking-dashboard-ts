@@ -50,7 +50,10 @@ h2,
   color: $color-font-Pale-Blue;
 }
 
-.work {
-  background: $color-Light-red-work;
-  border-radius: 16px;
+@each $card, $color in $card-colors {
+  .#{$card} {
+    background: $color;
+    border-radius: 16px;
+    margin-top: 1em;
+  }
 }
