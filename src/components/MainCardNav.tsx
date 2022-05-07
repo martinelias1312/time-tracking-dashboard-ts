@@ -5,7 +5,7 @@ type Props = {};
 
 const MainCardNav = (props: Props) => {
   return (
-    <nav>
+    <nav className="main-card-nav">
       <NavLink
         to="/daily"
         style={({ isActive }) => (isActive ? { color: "white" } : {})}
