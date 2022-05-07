@@ -16,17 +16,25 @@ const Dashboard = (props: Props) => {
   return (
     <ul className="stats-dashboard">
       {data.map((data) => (
-        <li key={data.id.toString()} className={data.title.toLowerCase()}>
-          <img
-            src={"../assets/images/icon-" + data.title.toLowerCase() + ".svg"}
-            alt=""
-            aria-hidden="true"
-          />
+        <li
+          key={data.id.toString()}
+          className={data.title.replace(" ", "").toLowerCase()}
+        >
+          <div className="stats-img-wrap">
+            <img
+              src={require("../assets/images/icon-" +
+                data.title.replace(" ", "").toLowerCase() +
+                ".svg")}
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+
           <div className="stats">
             <div className="stats-heading">
               <h2>{data.title}</h2>
               <img
-                src="../assets/images/icon-ellipsis.svg"
+                src={require("../assets/images/icon-ellipsis.svg")}
                 alt=""
                 aria-hidden="true"
               />
