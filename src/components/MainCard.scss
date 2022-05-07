@@ -1,0 +1,30 @@
+@import "../App.scss";
+.person-card {
+  margin: 0;
+  padding: 1.5em;
+  background: $color-primary-Blue;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.person-img-wrap {
+  max-width: 25%;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+figcaption {
+  font-weight: 300;
+  color: $color-font-Pale-Blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.7em;
+}
+
+.person-name {
+  color: white;
+  margin: 0.3em 0 0;
+}

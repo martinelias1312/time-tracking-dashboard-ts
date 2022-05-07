@@ -1,5 +1,8 @@
 import React from "react";
 
+// styles
+import "./MainCard.scss";
+
 // components
 import MainCardNav from "./MainCardNav";
 
@@ -12,7 +15,9 @@ const MainCard = (props: Props) => {
   return (
     <div className="main-card">
       <figure className="person-card">
-        <img src={person} alt="Person face" className="person-img" />
+        <div className="person-img-wrap">
+          <img src={person} alt="Person face" className="person-img" />
+        </div>
         <figcaption>
           Report for<p className="person-name">Jeremy Robson</p>
         </figcaption>
