@@ -1,5 +1,8 @@
 import React from "react";
 
+// styles
+import "./MainCardNav.scss";
+
 type Props = {};
 
 const MainCardNav = (props: Props) => {

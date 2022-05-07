@@ -1,4 +1,9 @@
 @import "../App.scss";
+.main-card {
+  background: $color-bg-stats-card;
+  border-radius: 15px;
+}
+
 .person-card {
   margin: 0;
   padding: 1.5em;
