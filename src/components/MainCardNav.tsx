@@ -7,11 +7,11 @@ type Props = {};
 
 const MainCardNav = (props: Props) => {
   return (
-    <ul className="main-card-nav">
-      <li>Daily</li>
-      <li>Weekly</li>
-      <li>Monthly</li>
-    </ul>
+    <div className="main-card-nav">
+      <button>Daily</button>
+      <button>Weekly</button>
+      <button>Monthly</button>
+    </div>
   );
 };
 
