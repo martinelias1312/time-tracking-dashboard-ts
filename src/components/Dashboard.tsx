@@ -1,35 +1,20 @@
 import React from "react";
+import { Data } from "../types";
 
 // styles
 import "./Dashboard.scss";
 
 type Props = {
-  data: {
-    id: number;
-    title: string;
-    timeframes: {
-      daily: {
-        current: number;
-        previous: number;
-      };
-      weekly: {
-        current: number;
-        previous: number;
-      };
-      monthly: {
-        current: number;
-        previous: number;
-      };
-    };
-  }[];
+  data: Data[];
 };
 
 const Dashboard = (props: Props) => {
   const { data } = props;
+
   return (
     <ul className="stats-dashboard">
       {data.map((data) => (
-        <li key={data.id.toString()} className={data.title.toLocaleLowerCase()}>
+        <li key={data.id.toString()} className={data.title.toLowerCase()}>
           <img
             src={"../assets/images/icon-" + data.title.toLowerCase() + ".svg"}
             alt=""
