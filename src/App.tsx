@@ -1,27 +1,16 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 
 // styles
 
 // components
 import MainCard from "./components/MainCard";
-
-// views
-import Daily from "./views/Daily";
-import Weekly from "./views/Weekly";
-import Monthly from "./views/Monthly";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
     <main className="App">
       <MainCard />
-      <section className="stats-dashboard">
-        <Routes>
-          <Route path="/daily" element={<Daily />} />
-          <Route path="/weekly" element={<Weekly />} />
-          <Route path="/monthly" element={<Monthly />} />
-        </Routes>
-      </section>
+      <Dashboard />
 
       <footer className="attribution">
         Challenge by{" "}
