@@ -12,10 +12,10 @@ $color-Violet-social: hsl(264, 64%, 52%);
 $color-Softorange-selfCare: hsl(43, 84%, 65%);
 
 // Neutral
-$color-Very-dark-blue: hsl(226, 43%, 10%);
-$color-Dark-blue: hsl(235, 46%, 20%);
-$color-Desaturated-blue: hsl(235, 45%, 61%);
-$color-Pale-Blue: hsl(236, 100%, 87%);
+$color-bg-body: hsl(226, 43%, 10%);
+$color-bg-stats-card: hsl(235, 46%, 20%);
+$color-font-blue: hsl(235, 45%, 61%);
+$color-font-Pale-Blue: hsl(236, 100%, 87%);
 
 // Typography
 $Font-size-cardTitles: 18px;
@@ -39,15 +39,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: $color-Almost-White;
-  color: $color-Medium-Gray;
-  margin: 0;
+  background: $color-bg-body;
+  color: $color-font-blue;
 
   font: {
-    size: $Font-size-base;
-    family: $Font-family;
+    size: 1rem;
+    family: $font-family;
   }
 }
 
