@@ -3,7 +3,7 @@ import React from "react";
 // styles
 import "./MainCard.scss";
 
-// components
+// children
 import MainCardNav from "./MainCardNav";
 
 // img
@@ -13,7 +13,7 @@ type Props = {};
 
 // component
 const MainCard = (props: Props) => {
-  // teplate
+  // template
   return (
     <div className="main-card">
       <figure className="person-card">
