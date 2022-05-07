@@ -11,6 +11,12 @@
   padding: 1.5em;
 }
 
+.stats-img-wrap {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
 .stats-heading {
   display: flex;
   flex-direction: row;
@@ -55,5 +61,9 @@ h2,
     background: $color;
     border-radius: 16px;
     margin-top: 1em;
+
+    img {
+      max-width: 20%;
+    }
   }
 }
