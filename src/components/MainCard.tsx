@@ -11,7 +11,9 @@ import person from "../assets/images/image-jeremy.png";
 
 type Props = {};
 
+// component
 const MainCard = (props: Props) => {
+  // teplate
   return (
     <div className="main-card">
       <figure className="person-card">

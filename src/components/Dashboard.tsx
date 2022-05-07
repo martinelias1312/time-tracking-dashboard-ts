@@ -8,9 +8,11 @@ type Props = {
   data: Data[];
 };
 
+// component
 const Dashboard = (props: Props) => {
   const { data } = props;
 
+  // template
   return (
     <ul className="stats-dashboard">
       {data.map((data) => (

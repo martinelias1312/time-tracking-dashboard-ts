@@ -5,7 +5,9 @@ import "./MainCardNav.scss";
 
 type Props = {};
 
+// component
 const MainCardNav = (props: Props) => {
+  // template
   return (
     <div className="main-card-nav">
       <button>Daily</button>

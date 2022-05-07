@@ -7,7 +7,9 @@ import "./App.scss";
 import MainCard from "./components/MainCard";
 import Dashboard from "./components/Dashboard";
 
+// component
 function App() {
+  // data fetch
   useEffect(() => {
     fetch("./data.json", {
       headers: {
@@ -21,6 +23,7 @@ function App() {
 
   const [data, setData] = useState([]);
 
+  // template
   return (
     <main className="App">
       <MainCard />
