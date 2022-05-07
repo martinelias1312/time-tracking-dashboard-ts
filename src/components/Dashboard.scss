@@ -1,0 +1,56 @@
+@import "../App.scss";
+
+.stats-dashboard {
+  list-style: none;
+  padding: 0;
+}
+
+.stats {
+  background: $color-bg-stats-card;
+  border-radius: 15px;
+  padding: 1.5em;
+}
+
+.stats-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+h2,
+.time-current {
+  color: white;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5em;
+
+  p {
+    margin: 0;
+  }
+}
+
+.time-current {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.time-previous {
+  font-size: 0.85em;
+  color: $color-font-Pale-Blue;
+}
+
+.work {
+  background: $color-Light-red-work;
+  border-radius: 16px;
+}
