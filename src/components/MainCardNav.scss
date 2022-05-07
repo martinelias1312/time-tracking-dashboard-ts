@@ -1,4 +1,4 @@
-@import "../components/MainCard.scss";
+@import "../App.scss";
 .main-card-nav {
   margin: 0;
   padding: 1.5em;
@@ -6,4 +6,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  button {
+    border: none;
+    background: none;
+    color: $color-font-blue;
+    font-weight: 300;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: white;
+    }
+  }
 }
