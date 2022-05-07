@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+      <footer className="attribution">
+        Challenge by{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.frontendmentor.io?ref=challenge"
+          rel="noreferrer"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          Learn React
+          Frontend Mentor
         </a>
-      </header>
+        . Coded by{" "}
+        <a href="https://www.linkedin.com/in/martin-eli%C3%A1%C5%A1-455550209/">
+          Martin Eliáš
+        </a>
+        .
+      </footer>
     </div>
   );
 }
