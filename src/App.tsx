@@ -1,6 +1,7 @@
 import React from "react";
 
 // styles
+import "./App.scss";
 
 // components
 import MainCard from "./components/MainCard";
