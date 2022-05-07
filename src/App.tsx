@@ -17,9 +17,9 @@ function App() {
       <MainCard />
       <section className="stats-dashboard">
         <Routes>
-          <Route path="/" element={<Daily />} />
-          <Route path="weekly" element={<Weekly />} />
-          <Route path="monthly" element={<Monthly />} />
+          <Route path="/daily" element={<Daily />} />
+          <Route path="/weekly" element={<Weekly />} />
+          <Route path="/monthly" element={<Monthly />} />
         </Routes>
       </section>
 
