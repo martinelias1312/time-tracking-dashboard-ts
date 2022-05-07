@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // styles
 import "./App.scss";
@@ -8,10 +8,23 @@ import MainCard from "./components/MainCard";
 import Dashboard from "./components/Dashboard";
 
 function App() {
+  useEffect(() => {
+    fetch("./data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
+  const [data, setData] = useState([]);
+
   return (
     <main className="App">
       <MainCard />
-      <Dashboard />
+      <Dashboard data={data} />
 
       <footer className="attribution">
         Challenge by{" "}
