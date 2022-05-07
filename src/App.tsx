@@ -1,9 +1,25 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import MainCard from "./components/MainCard";
+
+// views
+import Daily from "./views/Daily";
+import Weekly from "./views/Weekly";
+import Monthly from "./views/Monthly";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
+      <MainCard />
+      <section className="stats-dashboard">
+        <Routes>
+          <Route path="/" element={<Daily />} />
+          <Route path="weekly" element={<Weekly />} />
+          <Route path="monthly" element={<Monthly />} />
+        </Routes>
+      </section>
+
       <footer className="attribution">
         Challenge by{" "}
         <a
@@ -19,7 +35,7 @@ function App() {
         </a>
         .
       </footer>
-    </div>
+    </main>
   );
 }
 
