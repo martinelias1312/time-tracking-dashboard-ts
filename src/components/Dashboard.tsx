@@ -33,11 +33,14 @@ const Dashboard = (props: Props) => {
           <div className="stats">
             <div className="stats-heading">
               <h2>{data.title}</h2>
-              <img
-                src={require("../assets/images/icon-ellipsis.svg")}
-                alt=""
-                aria-hidden="true"
-              />
+              <div className="dots-wrap">
+                <img
+                  src={require("../assets/images/icon-ellipsis.svg").default}
+                  alt=""
+                  aria-hidden="true"
+                  className="img-dots"
+                />
+              </div>
             </div>
 
             <div className="time">
