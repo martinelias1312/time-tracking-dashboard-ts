@@ -9,7 +9,10 @@ import MainCardNav from "./MainCardNav";
 // img
 import person from "../assets/images/image-jeremy.png";
 
-type Props = {};
+type Props = {
+  switchTimeMode: (arg: string) => void;
+  timeMode: string;
+};
 
 // component
 const MainCard = (props: Props) => {
@@ -25,7 +28,7 @@ const MainCard = (props: Props) => {
         </figcaption>
       </figure>
 
-      <MainCardNav />
+      <MainCardNav {...props} />
     </div>
   );
 };
