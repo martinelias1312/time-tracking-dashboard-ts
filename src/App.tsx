@@ -21,13 +21,20 @@ function App() {
       .then((data) => setData(data));
   }, []);
 
+  // state
   const [data, setData] = useState([]);
+  const [timeMode, setTimeMode] = useState("weekly");
+
+  // function to change Time
+  const switchTimeMode = (mode: string) => {
+    setTimeMode(mode);
+  };
 
   // template
   return (
     <main className="App">
-      <MainCard />
-      <Dashboard data={data} />
+      <MainCard timeMode={timeMode} switchTimeMode={switchTimeMode} />
+      <Dashboard timeMode={timeMode} data={data} />
 
       <footer className="attribution">
         Challenge by{" "}
