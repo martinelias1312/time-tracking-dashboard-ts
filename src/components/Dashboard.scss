@@ -17,6 +17,12 @@
   background: $color-bg-stats-card;
   border-radius: 15px;
   padding: 1.5em;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background: hsl(236, 45%, 40%);
+  }
 }
 
 .stats-img-wrap {
@@ -51,8 +57,21 @@ h2,
   color: white;
 }
 
+.dots-wrap {
+  display: flex;
+  align-items: center;
+}
+
 .img-dots {
   max-width: 100%;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    path {
+      fill: white;
+    }
+  }
 }
 
 .time {
