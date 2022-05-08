@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+@each $card, $color in $card-colors {
+  .#{$card} {
+    background: $color;
+    border-radius: 16px;
+    margin-top: 1em;
+  }
+}
+
 .stats {
   background: $color-bg-stats-card;
   border-radius: 15px;
@@ -15,6 +23,15 @@
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
+  max-height: 2.5em;
+
+  img {
+    max-width: 20%;
+    height: fit-content;
+    position: relative;
+    top: -0.2em;
+    right: 1em;
+  }
 }
 
 .stats-heading {
@@ -32,6 +49,10 @@ h2 {
 h2,
 .time-current {
   color: white;
+}
+
+.img-dots {
+  max-width: 100%;
 }
 
 .time {
@@ -54,16 +75,4 @@ h2,
 .time-previous {
   font-size: 0.85em;
   color: $color-font-Pale-Blue;
-}
-
-@each $card, $color in $card-colors {
-  .#{$card} {
-    background: $color;
-    border-radius: 16px;
-    margin-top: 1em;
-
-    img {
-      max-width: 20%;
-    }
-  }
 }
