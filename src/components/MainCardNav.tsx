@@ -31,7 +31,7 @@ const MainCardNav = (props: Props) => {
       <button onClick={setActive} className="day time-btn">
         Daily
       </button>
-      <button onClick={setActive} className="week time-btn">
+      <button onClick={setActive} className="week time-btn active">
         Weekly
       </button>
       <button onClick={setActive} className="month time-btn">

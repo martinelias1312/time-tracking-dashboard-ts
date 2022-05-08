@@ -4,14 +4,17 @@ import { Data } from "../types";
 // styles
 import "./Dashboard.scss";
 
+// children
+import Time from "./Time";
+
 type Props = {
   data: Data[];
+  timeMode: string;
 };
 
 // component
 const Dashboard = (props: Props) => {
-  const { data } = props;
-
+  const { data, timeMode } = props;
   // template
   return (
     <ul className="stats-dashboard">
@@ -49,14 +52,18 @@ const Dashboard = (props: Props) => {
               </div>
             </div>
 
-            <div className="time">
-              <p className="time-current">
-                {data.timeframes.weekly.current}hrs
-              </p>
-              <p className="time-previous">
-                Last Week - {data.timeframes.weekly.previous}hrs
-              </p>
-            </div>
+            <Time
+              timeMode={timeMode}
+              activity={
+                data.timeframes[
+                  timeMode === "day"
+                    ? "daily"
+                    : timeMode === "week"
+                    ? "weekly"
+                    : "monthly"
+                ]
+              }
+            />
           </div>
         </li>
       ))}

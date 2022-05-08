@@ -23,7 +23,7 @@ function App() {
 
   // state
   const [data, setData] = useState([]);
-  const [timeMode, setTimeMode] = useState("weekly");
+  const [timeMode, setTimeMode] = useState("week");
 
   // function to change Time
   const switchTimeMode = (mode: string) => {
