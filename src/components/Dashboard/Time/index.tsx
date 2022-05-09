@@ -16,7 +16,7 @@ const Time = (props: Props) => {
       <p className="time-current">{activity.current}hrs</p>
       <p className="time-previous">
         Last {timeMode.charAt(0).toUpperCase() + timeMode.slice(1)} -{" "}
-        {activity.previous} hrs
+        {activity.previous}hrs
       </p>
     </div>
   );
