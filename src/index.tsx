@@ -5,13 +5,13 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 
 // components
-import App from "./App";
+import Layout from "./Layout";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
+const container = document.getElementById("root") as HTMLElement;
+const root = ReactDOM.createRoot(container);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Layout />
   </React.StrictMode>
 );

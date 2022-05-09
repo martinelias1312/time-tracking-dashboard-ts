@@ -1,5 +1,5 @@
 import React from "react";
-import { Data } from "../types";
+import { Data } from "../../types";
 
 // styles
 import "./Dashboard.scss";
@@ -25,7 +25,7 @@ const Dashboard = (props: Props) => {
         >
           <div className="stats-img-wrap">
             <img
-              src={require("../assets/images/icon-" +
+              src={require("../../assets/images/icon-" +
                 data.title.replace(" ", "").toLowerCase() +
                 ".svg")}
               alt=""

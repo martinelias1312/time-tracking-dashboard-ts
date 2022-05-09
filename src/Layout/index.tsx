@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 
 // styles
-import "./App.scss";
+import "./Layout.scss";
 
 // components
-import MainCard from "./components/MainCard";
-import Dashboard from "./components/Dashboard";
+import MainCard from "../components/MainCard";
+import Dashboard from "../components/Dashboard";
 
 // component
 function App() {

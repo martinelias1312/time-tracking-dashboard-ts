@@ -7,7 +7,7 @@ import "./MainCard.scss";
 import MainCardNav from "./MainCardNav";
 
 // img
-import person from "../assets/images/image-jeremy.png";
+import person from "../../assets/images/image-jeremy.png";
 
 type Props = {
   switchTimeMode: (arg: string) => void;
