@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/dailyweeklymonthly-time-tracking-dashboard-BJvO9aI85](https://www.frontendmentor.io/solutions/dailyweeklymonthly-time-tracking-dashboard-BJvO9aI85)
 - Live Site URL: [https://time-tracking-dashboard-ts.vercel.app/](https://time-tracking-dashboard-ts.vercel.app/)
 
 ## My process
