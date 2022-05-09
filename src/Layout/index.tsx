@@ -32,9 +32,11 @@ function App() {
 
   // template
   return (
-    <main className="App">
-      <MainCard timeMode={timeMode} switchTimeMode={switchTimeMode} />
-      <Dashboard timeMode={timeMode} data={data} />
+    <>
+      <main className="App">
+        <MainCard timeMode={timeMode} switchTimeMode={switchTimeMode} />
+        <Dashboard timeMode={timeMode} data={data} />
+      </main>
 
       <footer className="attribution">
         Challenge by{" "}
@@ -51,7 +53,7 @@ function App() {
         </a>
         .
       </footer>
-    </main>
+    </>
   );
 }
 

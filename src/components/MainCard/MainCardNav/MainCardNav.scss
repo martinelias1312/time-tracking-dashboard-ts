@@ -1,4 +1,4 @@
-@import "../../../Layout/Layout.scss";
+@import "../../../assets/scss/variables.scss";
 .main-card-nav {
   margin: 0;
   padding: 1.5em;
@@ -22,4 +22,12 @@
 
 .active {
   color: white;
+}
+
+@media screen and (min-width: 899px) {
+  .main-card-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.3em;
+  }
 }

@@ -1,4 +1,4 @@
-@import "../../Layout/Layout.scss";
+@import "../../assets/scss/variables.scss";
 .main-card {
   background: $color-bg-stats-card;
   border-radius: 15px;
@@ -33,4 +33,39 @@ figcaption {
   color: white;
   margin: 0.1em 0 0;
   font-size: 1.4em;
+}
+
+@media screen and (min-width: 499px) {
+  .main-card {
+    max-width: 27em;
+  }
+
+  .person-img-wrap {
+    max-width: 20%;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  .main-card {
+    max-width: 14em;
+    min-width: 0;
+  }
+
+  figcaption {
+    margin: 0 0 3em;
+  }
+
+  .person-card {
+    flex-direction: column;
+  }
+
+  .person-img-wrap {
+    margin-bottom: 2em;
+    max-width: 40%;
+  }
+
+  .person-name {
+    max-width: 50%;
+    font-size: 2em;
+  }
 }

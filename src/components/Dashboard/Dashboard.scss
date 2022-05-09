@@ -1,5 +1,4 @@
-@import "../../Layout/Layout.scss";
-
+@import "../../assets/scss/variables.scss";
 .stats-dashboard {
   list-style: none;
   padding: 0;
@@ -94,4 +93,66 @@ h2,
 .time-previous {
   font-size: 0.85em;
   color: $color-font-Pale-Blue;
+}
+
+@media screen and (min-width: 499px) {
+  .stats-dashboard {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10em, 13em));
+    grid-gap: 1.5em;
+    margin: 0;
+  }
+
+  .stats-img-wrap img {
+    max-width: 30%;
+  }
+
+  .stats-dashboard li:first-child img {
+    top: -0.6em;
+  }
+  .stats-dashboard li:nth-child(5) img {
+    top: -1.05em;
+  }
+  .stats-dashboard li:nth-child(6) img {
+    top: -1em;
+  }
+
+  @each $card, $color in $card-colors {
+    .#{$card} {
+      margin-top: 0;
+    }
+  }
+
+  .time {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  .stats-dashboard {
+    margin: 0;
+    grid-gap: 1.5em;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 986px) {
+  .stats-dashboard {
+    display: grid;
+    max-width: 42em;
+  }
+
+  .stats {
+    padding: 2em;
+  }
+
+  .time {
+    margin-top: 1.8em;
+    gap: 0.7em;
+  }
 }

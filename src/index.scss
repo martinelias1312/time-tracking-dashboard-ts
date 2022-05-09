@@ -1,38 +1,5 @@
-@import "./assets/normalize.scss";
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
-/*
- *	VARIABLES
- ------------------------------------------------------ */
-$color-primary-Blue: hsl(246, 80%, 60%);
-
-$card-colors: (
-  "work": hsl(15, 100%, 70%),
-  "play": hsl(195, 74%, 62%),
-  "study": hsl(348, 100%, 68%),
-  "exercise": hsl(145, 58%, 55%),
-  "social": hsl(264, 64%, 52%),
-  "selfcare": hsl(43, 84%, 65%),
-);
-
-/*$pages: work, play, study, exercise, social, selfcare;
-$color-work: hsl(15, 100%, 70%);
-$color-play: hsl(195, 74%, 62%);
-$color-study: hsl(348, 100%, 68%);
-$color-exercise: hsl(145, 58%, 55%);
-$color-social: hsl(264, 64%, 52%);
-$color-selfcare: hsl(43, 84%, 65%);
-*/
-
-// Neutral
-$color-bg-body: hsl(226, 43%, 10%);
-$color-bg-stats-card: hsl(235, 46%, 20%);
-$color-font-blue: hsl(235, 45%, 61%);
-$color-font-Pale-Blue: hsl(236, 100%, 87%);
-
-// Typography
-$Font-size-cardTitles: 18px;
-$font-family: "Rubik", sans-serif;
-
+@import "./assets/scss/normalize.scss";
+@import "./assets/scss/variables";
 /*
  *	GENERAL
  ------------------------------------------------------ */
@@ -51,6 +18,10 @@ body {
   margin: 0;
   background: $color-bg-body;
   color: $color-font-blue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   font: {
     size: 1rem;
