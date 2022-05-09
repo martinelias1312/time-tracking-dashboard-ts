@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![1440px](src/screens/1440px.png)
+![375px](src/screens/375px.png)
 
 ### Links
 
